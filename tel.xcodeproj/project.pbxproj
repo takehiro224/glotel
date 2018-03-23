@@ -14,6 +14,13 @@
 		2F35BCD4205F5DAF00308C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35BCD2205F5DAF00308C37 /* LaunchScreen.storyboard */; };
 		2F35BCDF205F5DAF00308C37 /* telTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BCDE205F5DAF00308C37 /* telTests.swift */; };
 		2F35BCEA205F5DAF00308C37 /* telUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BCE9205F5DAF00308C37 /* telUITests.swift */; };
+		2F35BD06205F70BF00308C37 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BD05205F70BF00308C37 /* BookViewController.swift */; };
+		2F35BD08205F70D100308C37 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BD07205F70D100308C37 /* HistoryViewController.swift */; };
+		2F35BD0A205F70E200308C37 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BD09205F70E200308C37 /* AccountViewController.swift */; };
+		2F35BD0D205F711400308C37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35BD0C205F711400308C37 /* MenuViewController.swift */; };
+		2F35BD0F205FAFE800308C37 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35BD0E205FAFE800308C37 /* Book.storyboard */; };
+		2F35BD11205FAFFB00308C37 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35BD10205FAFFB00308C37 /* History.storyboard */; };
+		2F35BD13205FB00700308C37 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35BD12205FB00700308C37 /* Account.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		2F35BCE5205F5DAF00308C37 /* telUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F35BCE9205F5DAF00308C37 /* telUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telUITests.swift; sourceTree = "<group>"; };
 		2F35BCEB205F5DAF00308C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F35BD05205F70BF00308C37 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		2F35BD07205F70D100308C37 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		2F35BD09205F70E200308C37 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		2F35BD0C205F711400308C37 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2F35BD0E205FAFE800308C37 /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
+		2F35BD10205FAFFB00308C37 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		2F35BD12205FB00700308C37 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,12 @@
 		2F35BCC8205F5DAF00308C37 /* tel */ = {
 			isa = PBXGroup;
 			children = (
-				2F35BCC9205F5DAF00308C37 /* AppDelegate.swift */,
-				2F35BCCB205F5DAF00308C37 /* ViewController.swift */,
-				2F35BCCD205F5DAF00308C37 /* Main.storyboard */,
-				2F35BCD0205F5DAF00308C37 /* Assets.xcassets */,
-				2F35BCD2205F5DAF00308C37 /* LaunchScreen.storyboard */,
 				2F35BCD5205F5DAF00308C37 /* Info.plist */,
+				2F35BCD0205F5DAF00308C37 /* Assets.xcassets */,
+				2F35BCC9205F5DAF00308C37 /* AppDelegate.swift */,
+				2F35BCCD205F5DAF00308C37 /* Main.storyboard */,
+				2F35BCD2205F5DAF00308C37 /* LaunchScreen.storyboard */,
+				2F35BCFB205F6EF600308C37 /* ViewControllers */,
 			);
 			path = tel;
 			sourceTree = "<group>";
@@ -123,6 +137,53 @@
 				2F35BCEB205F5DAF00308C37 /* Info.plist */,
 			);
 			path = telUITests;
+			sourceTree = "<group>";
+		};
+		2F35BCFB205F6EF600308C37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F35BCCB205F5DAF00308C37 /* ViewController.swift */,
+				2F35BD0B205F70E800308C37 /* Common */,
+				2F35BCFC205F6F0F00308C37 /* Book */,
+				2F35BCFD205F6F2D00308C37 /* History */,
+				2F35BCFE205F6F4000308C37 /* Account */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F35BCFC205F6F0F00308C37 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				2F35BD0E205FAFE800308C37 /* Book.storyboard */,
+				2F35BD05205F70BF00308C37 /* BookViewController.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		2F35BCFD205F6F2D00308C37 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2F35BD10205FAFFB00308C37 /* History.storyboard */,
+				2F35BD07205F70D100308C37 /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		2F35BCFE205F6F4000308C37 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2F35BD12205FB00700308C37 /* Account.storyboard */,
+				2F35BD09205F70E200308C37 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2F35BD0B205F70E800308C37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F35BD0C205F711400308C37 /* MenuViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F35BCD4205F5DAF00308C37 /* LaunchScreen.storyboard in Resources */,
+				2F35BD0F205FAFE800308C37 /* Book.storyboard in Resources */,
 				2F35BCD1205F5DAF00308C37 /* Assets.xcassets in Resources */,
+				2F35BD11205FAFFB00308C37 /* History.storyboard in Resources */,
+				2F35BD13205FB00700308C37 /* Account.storyboard in Resources */,
 				2F35BCCF205F5DAF00308C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F35BD0A205F70E200308C37 /* AccountViewController.swift in Sources */,
 				2F35BCCC205F5DAF00308C37 /* ViewController.swift in Sources */,
+				2F35BD0D205F711400308C37 /* MenuViewController.swift in Sources */,
+				2F35BD06205F70BF00308C37 /* BookViewController.swift in Sources */,
 				2F35BCCA205F5DAF00308C37 /* AppDelegate.swift in Sources */,
+				2F35BD08205F70D100308C37 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +586,113 @@
 			};
 			name = Release;
 		};
+		2F35BCF7205F5E2300308C37 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Develop;
+		};
+		2F35BCF8205F5E2300308C37 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMCFLQ9MSP;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOP=1";
+				INFOPLIST_FILE = tel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.globis.tel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOP;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Develop;
+		};
+		2F35BCF9205F5E2300308C37 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMCFLQ9MSP;
+				INFOPLIST_FILE = telTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.globis.telTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tel.app/tel";
+			};
+			name = Develop;
+		};
+		2F35BCFA205F5E2300308C37 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMCFLQ9MSP;
+				INFOPLIST_FILE = telUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.globis.telUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tel;
+			};
+			name = Develop;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +700,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F35BCEC205F5DAF00308C37 /* Debug */,
+				2F35BCF7205F5E2300308C37 /* Develop */,
 				2F35BCED205F5DAF00308C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -534,6 +710,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F35BCEF205F5DAF00308C37 /* Debug */,
+				2F35BCF8205F5E2300308C37 /* Develop */,
 				2F35BCF0205F5DAF00308C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -543,6 +720,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F35BCF2205F5DAF00308C37 /* Debug */,
+				2F35BCF9205F5E2300308C37 /* Develop */,
 				2F35BCF3205F5DAF00308C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -552,6 +730,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F35BCF5205F5DAF00308C37 /* Debug */,
+				2F35BCFA205F5E2300308C37 /* Develop */,
 				2F35BCF6205F5DAF00308C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

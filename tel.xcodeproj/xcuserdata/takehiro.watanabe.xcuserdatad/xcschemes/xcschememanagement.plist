@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>tel-develop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>tel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2F35BCC5205F5DAF00308C37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F35BCD9205F5DAF00308C37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F35BCE4205F5DAF00308C37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
